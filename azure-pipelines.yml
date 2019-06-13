@@ -19,7 +19,3 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-
-- script: |
-     node-lambda deploy -a $(AWS_ACCESS_KEY) -s $(AWS_SECRET_KEY) -o $(AWS_ROLE) -r $(AWS_REGION) -n $(AWS_LAMBDA_FUNCTION_NAME) --excludeGlobs "azure-pipelines.yml"
-  displayName: 'Deploy to AWS'
